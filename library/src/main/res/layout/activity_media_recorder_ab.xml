@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.seu.magicfilter.camera.CameraGlSurfaceView
+            android:id="@+id/glsurfaceview_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:contentDescription="@string/imageview_content_description"
+            android:padding="10dip"
+            android:src="@drawable/paishe_guanbi"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="49dip"
+            android:layout_centerInParent="true"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/record_camera_led"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/record_camera_flash_led_selector"
+                android:button="@null"
+                android:textColor="@android:color/white"/>
+
+            <View
+                android:layout_width="45dp"
+                android:layout_height="match_parent"></View>
+
+            <CheckBox
+                android:id="@+id/record_camera_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/record_camera_switch_selector"
+                android:button="@null"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/record_time_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        >
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_tishi"
+            />
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:id="@+id/record_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="00:00"
+            android:textColor="#ffffffff"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/record_controller"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/paishe"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/title_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_toRightOf="@id/record_controller"
+        android:src="@drawable/record_next_seletor"
+        android:visibility="invisible"></ImageView>
+
+    <ImageView
+        android:id="@+id/title_dete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_toLeftOf="@id/record_controller"
+        android:src="@drawable/delete"
+        android:visibility="invisible"></ImageView>
+
+    <ImageView
+        android:id="@+id/title_upload_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginRight="32dp"
+        android:layout_toLeftOf="@id/record_controller"
+        android:contentDescription="@string/imageview_content_description"
+        android:src="@drawable/anniu_upload"
+        android:visibility="visible"></ImageView>
+
+
+</RelativeLayout>

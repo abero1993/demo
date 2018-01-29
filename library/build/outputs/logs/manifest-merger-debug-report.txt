@@ -1,0 +1,31 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:1:1-7:12
+INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:1:1-7:12
+INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:1:11-40
+		INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml
+		INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:2:11-69
+uses-feature#0x00020000
+ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:4:5-5:68
+	android:glEsVersion
+		ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:5:9-41
+	android:required
+		ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:5:42-65
+uses-sdk
+INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml
+INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml
+INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml
+INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml
+		ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml
+		INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml
+		ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml
+		INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml

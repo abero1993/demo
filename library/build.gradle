@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        externalNativeBuild {
+            cmake {
+                arguments '-DANDROID_PLATFORM=android-18',
+                        '-DANDROID_TOOLCHAIN=clang',
+                        '-DANDROID_STL=stlport_static'
+            }
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path 'CMakeLists.txt'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    compile project(':encode')
+    testCompile 'junit:junit:4.12'
+}
