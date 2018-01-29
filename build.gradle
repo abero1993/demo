@@ -8,11 +8,43 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.0'
-        
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
+}
+
+// Define versions in a single place
+ext {
+    // Sdk and tools
+    minSdkVersion = 15
+    targetSdkVersion = 24
+    compileSdkVersion = 26
+    buildToolsVersion = '26.0.2'
+
+    // App dependencies
+    supportLibraryVersion = '26.1.0'
+    guavaVersion = '18.0'
+    junitVersion = '4.12'
+    mockitoVersion = '1.10.19'
+    powerMockito = '1.6.2'
+    hamcrestVersion = '1.3'
+    runnerVersion = '0.5'
+    rulesVersion = '0.5'
+    espressoVersion = '2.2.2'
+    rxjavaVersion = '1.1.8'
+    rxandroidVersion = '1.2.1'
+    sqlbriteVersion = '0.7.0'
+    retrofitVsersion = '2.3.0'
+    crashReport = '2.1.9'
+    nativecrashreport = '3.0'
+    ijkplayerVersion = '0.8.4'
+    supportAnnotationsVersion = '23.0.1'
+    danmakuVersion = '0.9.12'
+    gsonVersion = '2.8.2'
+    wechat = '+'
+    facebook = '4.26.0'
+    utilcodeVsersion = '1.9.10'
 }
 
 allprojects {
