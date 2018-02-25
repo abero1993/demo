@@ -9,8 +9,13 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/encode" />
+            <option value="$PROJECT_DIR$/library" />
             <option value="$PROJECT_DIR$/loadingview" />
+            <option value="$PROJECT_DIR$/mysdl" />
             <option value="$PROJECT_DIR$/squareboxloadingviewdemo" />
+            <option value="$PROJECT_DIR$/testopengles" />
+            <option value="$PROJECT_DIR$/utils" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

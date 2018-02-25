@@ -4,8 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/abero.iml" filepath="$PROJECT_DIR$/abero.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/encode/encode.iml" filepath="$PROJECT_DIR$/encode/encode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/loadingview/loadingview.iml" filepath="$PROJECT_DIR$/loadingview/loadingview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysdl/mysdl.iml" filepath="$PROJECT_DIR$/mysdl/mysdl.iml" />
       <module fileurl="file://$PROJECT_DIR$/squareboxloadingviewdemo/squareboxloadingviewdemo.iml" filepath="$PROJECT_DIR$/squareboxloadingviewdemo/squareboxloadingviewdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testopengles/testopengles.iml" filepath="$PROJECT_DIR$/testopengles/testopengles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
     </modules>
   </component>
 </project>

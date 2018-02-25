@@ -10,7 +10,6 @@ import com.seu.magicfilter.filter.base.gpuimage.GPUImageFilter;
  */
 public class MagicCameraInputFilter extends GPUImageFilter {
 
-    //这里的顶点着色器没有矩阵参数
     public MagicCameraInputFilter() {
         super(R.raw.default_vertex, R.raw.default_fragment);
     }

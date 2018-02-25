@@ -35,7 +35,6 @@ public class CubeTransitionIndicator extends Indicator {
             // Log.i(TAG, "x=" + translateX[i] + " y=" + translateY[i] + "  index=" + i);
             //Log.i(TAG,"w="+rWidth+" h="+rHeight);
             canvas.drawRect(rectF, paint);
-
             canvas.restore();
         }
     }
@@ -64,9 +63,6 @@ public class CubeTransitionIndicator extends Indicator {
                 translateX[index] = centreX;
                 translateY[index] = centreY - (diagonal / 2);
                 degrees[index]=45;
-                translationYAnim = ValueAnimator.ofFloat(centreY - diagonal / 2, centreY -
-                        diagonal / 2 - rectangleHeight / 2, centreY - diagonal / 2 - rectangleHeight, centreY -
-                        diagonal / 2, centreY - diagonal / 2 + sag);
 
                 translationYAnim = ValueAnimator.ofFloat(centreY - diagonal / 2 + sag, centreY - diagonal / 2 -
                         rectangleHeight);
@@ -78,10 +74,6 @@ public class CubeTransitionIndicator extends Indicator {
                 translateX[index] = centreX - (diagonal / 2);
                 translateY[index] = centreY;
                 degrees[index]=135;
-                translationXAnim = ValueAnimator.ofFloat(centreX - diagonal / 2, centreX -
-                        diagonal / 2 - rectangleHeight / 2, centreX -
-                        diagonal / 2 - rectangleHeight, centreX - diagonal / 2, centreX - diagonal
-                        / 2 + sag);
                 translationXAnim = ValueAnimator.ofFloat(centreX - diagonal / 2 + sag, centreX - diagonal / 2 -
                         rectangleHeight);
 
@@ -92,10 +84,6 @@ public class CubeTransitionIndicator extends Indicator {
                 translateX[index] = centreX;
                 translateY[index] = centreY + (diagonal / 2);
                 degrees[index]=45;
-                translationYAnim = ValueAnimator.ofFloat(centreY + diagonal / 2, centreY +
-                                diagonal / 2 + rectangleHeight / 2, centreY +
-                                diagonal / 2 + rectangleHeight, centreY + diagonal / 2,
-                        centreY + diagonal / 2 - sag);
                 translationYAnim = ValueAnimator.ofFloat(centreY + diagonal / 2 - sag, centreY + diagonal / 2 +
                         rectangleHeight);
 
@@ -106,22 +94,17 @@ public class CubeTransitionIndicator extends Indicator {
                 translateX[index] = centreX + (diagonal / 2);
                 translateY[index] = centreY;
                 degrees[index]=135;
-                translationXAnim = ValueAnimator.ofFloat(centreX + diagonal / 2, centreX +
-                                diagonal / 2 + rectangleHeight / 2, centreX +
-                                diagonal / 2 + rectangleHeight, centreX + diagonal / 2,
-                        centreX + diagonal / 2 - sag);
                 translationXAnim = ValueAnimator.ofFloat(centreX + diagonal / 2 - sag, centreX + diagonal / 2 +
                         rectangleHeight);
 
                 rotateAnim = ValueAnimator.ofFloat(135,45);
             }
 
-            long duration = 800;
+            long duration = 1000;
             if (translationXAnim != null) {
                 translationXAnim.setInterpolator(new HesitateInterPolator());
                 translationXAnim.setDuration(duration);
                 translationXAnim.setRepeatCount(-1);
-                translationXAnim.setStartDelay(50);
                 addUpdateListener(translationXAnim, new ValueAnimator.AnimatorUpdateListener() {
                     @Override
                     public void onAnimationUpdate(ValueAnimator animation) {
@@ -139,7 +122,6 @@ public class CubeTransitionIndicator extends Indicator {
                 translationYAnim.setDuration(duration);
                 translationYAnim.setInterpolator(new HesitateInterPolator());
                 translationYAnim.setRepeatCount(-1);
-                translationYAnim.setStartDelay(50);
                 addUpdateListener(translationYAnim, new ValueAnimator.AnimatorUpdateListener() {
                     @Override
                     public void onAnimationUpdate(ValueAnimator animation) {
@@ -157,7 +139,6 @@ public class CubeTransitionIndicator extends Indicator {
                 rotateAnim.setDuration(duration);
                 rotateAnim.setInterpolator(new MyLinearInterpolator());
                 rotateAnim.setRepeatCount(-1);
-                rotateAnim.setStartDelay(50);
                 addUpdateListener(rotateAnim, new ValueAnimator.AnimatorUpdateListener() {
                     @Override
                     public void onAnimationUpdate(ValueAnimator animation) {
