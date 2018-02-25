@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AvatarImageBehavior -->
+    <declare-styleable name="AvatarImageBehavior">
+        <attr name="finalYPosition" format="dimension"/>
+        <attr name="startXPosition" format="dimension"/>
+        <attr name="startToolbarPosition" format="dimension"/>
+        <attr name="startHeight" format="dimension"/>
+        <attr name="finalHeight" format="dimension"/>
+        <attr name="finalSize" format="dimension"/>
+        <attr name="finalX" format="dimension"/>
+        <attr name="toolBarHeight" format="dimension"/>
+    </declare-styleable>
+    <!--侧滑删除的-->
+    <declare-styleable name="EasySwipeMenuLayout">
+        <attr name="leftMenuView" format="reference"/>
+        <attr name="rightMenuView" format="reference"/>
+        <attr name="contentView" format="reference"/>
+        <attr name="canRightSwipe" format="boolean"/>
+        <attr name="canLeftSwipe" format="boolean"/>
+        <attr name="fraction" format="float"/>
+    </declare-styleable>
+    <!--搜索的-->
+    <declare-styleable name="MoTuSearchView">
+        <attr name="openSearch" format="boolean"/>
+    </declare-styleable>
+    <!--JudjeTextInputLayout的其他属性-->
+    <declare-styleable name="JudjeTextInputLayout">
+        <attr name="type" format="enum">
+            <enum name="text" value="0"/>
+            <enum name="imail" value="1"/>
+            <enum name="password" value="2"/>
+        </attr>
+        <attr name="errorText" format="string"/><!--错误显示的文字-->
+
+        <attr name="imailLengthTest" format="integer"/>
+    </declare-styleable>
+
+
+    <!-- 自定义属性，属性名visible_tab_count，属性类型integer-->
+    <attr name="visible_tab_count" format="integer"/>
+
+    <!-- 关联自定义属性visible_tab_count和控件ChildLinearLayout-->
+    <declare-styleable name="PageTabLayout">
+        <attr name="background_content_color" format="color"/>
+        <attr name="defaultTextViewColor" format="color"/>
+        <attr name="selectedTextViewColor" format="color"/>
+        <attr name="defaultTextViewSize" format="dimension"/>
+        <attr name="selectedTextViewSize" format="dimension"/>
+        <attr name="item_margins" format="dimension"/>
+        <attr name="line_start_color" format="color"/>
+        <attr name="line_end_color" format="color"/>
+        <attr name="line_height" format="integer"/>
+    </declare-styleable>
+    <!--流式布局-->
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+        <attr name="gravity">
+            <enum name="left" value="-1"/>
+            <enum name="center" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="MsgView">
+        <attr name="mv_backgroundColor" format="color"/>
+        <attr name="mv_cornerRadius" format="dimension"/>
+        <attr name="mv_strokeWidth" format="dimension"/>
+        <attr name="mv_strokeColor" format="color"/>
+        <attr name="mv_isRadiusHalfHeight" format="boolean"/>
+        <attr name="mv_isWidthHeightEqual" format="boolean"/>
+    </declare-styleable>
+
+
+    <attr name="defaultColor" format="color"></attr>
+    <attr name="cirRadius" format="dimension"></attr>
+    <attr name="cycleTime" format="integer"></attr>
+
+    <declare-styleable name="FavView">
+        <attr name="defaultColor" />
+        <attr name="cirRadius" />
+        <attr name="cycleTime" />
+    </declare-styleable>
+
+</resources>
