@@ -1,1 +1,1 @@
-include ':app', ':loadingview', ':squareboxloadingviewdemo', ':library', ':encode', ':mysdl', ':utils', ':testopengles'
+include ':app', ':loadingview', ':squareboxloadingviewdemo', ':library', ':encode', ':mysdl', ':utils', ':testopengles', ':textrxtoken', ':recvideo'

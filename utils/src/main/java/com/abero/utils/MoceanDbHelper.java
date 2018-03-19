@@ -60,7 +60,6 @@ public class MoceanDbHelper extends SQLiteOpenHelper {
             sqLiteDatabase.execSQL(historySql);
             sqLiteDatabase.execSQL("CREATE UNIQUE INDEX unique_index_id ON " + HISTORY_TABLE_NAME + " ( Id )");
 
-
             //收藏
             String favoriteSql = "create table if not exists " + FAVORITE_TABLE_NAME
                     + " (Id integer primary key, FavoriteId integer, ProgramType text,Name text, Categoryid text, " +

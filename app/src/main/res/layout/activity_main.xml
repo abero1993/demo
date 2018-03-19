@@ -5,15 +5,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context="com.abero.aberodemo.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <!--  <com.abero.aberodemo.TestCameraView
+          android:layout_width="400dp"
+          android:layout_height="400dp"
+          />
+  -->
+    <!--   <com.abero.aberodemo.TestMapView
+           android:id="@+id/map"
+           android:layout_width="400dp"
+           android:layout_height="400dp"
+           android:background="@color/colorAccent"
+           />-->
+
+
+    <com.abero.aberodemo.MyViewGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="abero1111"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:text="abero2222"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp"
+                    android:text="abero33333"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp"
+                    android:text="abero4444"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.abero.aberodemo.MyViewGroup>
 
 </android.support.constraint.ConstraintLayout>

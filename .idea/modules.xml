@@ -8,8 +8,10 @@
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/loadingview/loadingview.iml" filepath="$PROJECT_DIR$/loadingview/loadingview.iml" />
       <module fileurl="file://$PROJECT_DIR$/mysdl/mysdl.iml" filepath="$PROJECT_DIR$/mysdl/mysdl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recvideo/recvideo.iml" filepath="$PROJECT_DIR$/recvideo/recvideo.iml" />
       <module fileurl="file://$PROJECT_DIR$/squareboxloadingviewdemo/squareboxloadingviewdemo.iml" filepath="$PROJECT_DIR$/squareboxloadingviewdemo/squareboxloadingviewdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/testopengles/testopengles.iml" filepath="$PROJECT_DIR$/testopengles/testopengles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/textrxtoken/textrxtoken.iml" filepath="$PROJECT_DIR$/textrxtoken/textrxtoken.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
     </modules>
   </component>

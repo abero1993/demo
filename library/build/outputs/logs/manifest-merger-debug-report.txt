@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:1:1-7:12
-INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:1:1-7:12
-INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:1:1-7:12
+ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:1:1-11:12
 	package
 		ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:1:11-40
 		INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml
@@ -15,6 +15,18 @@ ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:4:5-
 		ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:5:9-41
 	android:required
 		ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:5:42-65
+uses-permission#android.permission.CAMERA
+ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:7:22-62
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:8:5-87
+	android:name
+		ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:8:22-68
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:9:5-97
+	android:name
+		ADDED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml:9:22-78
 uses-sdk
 INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\androidwork\github\abero\library\src\main\AndroidManifest.xml
